@@ -26,6 +26,12 @@ test:
   <<: *default
   database: db/test.sqlite3
 
-production:
-  <<: *default
-  database: db/production.sqlite3
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: pfmc889aux58g2n4
+  pool: 5
+  username: ihntx8jednunb75r
+  password: wp7by76a71r39pjf
+  host: r6ze0q02l4me77k3.chr7pe7iynqr.eu-west-1.rds.amazonaws.com

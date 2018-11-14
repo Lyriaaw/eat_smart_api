@@ -4,8 +4,11 @@ Rails.application.routes.draw do
 
 
 
+  get 'dishes', to: 'restaurants#menue'
 
+  post 'order', to: 'order#create'
 
+  get 'orders/:restaurant_id', to: 'order#get'
 
 
 end
