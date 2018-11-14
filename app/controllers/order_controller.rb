@@ -19,9 +19,6 @@ class OrderController < ApplicationController
     render json: {orders: orders.flatten.as_json(include: [:table, :dishes])}
   end
 
-
-
-
   private
   def order_params
     params.require(:order).permit(:table, :dishes)
